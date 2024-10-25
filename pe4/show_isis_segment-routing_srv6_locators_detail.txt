@@ -1,6 +1,11 @@
-Fri Oct 25 09:24:55.050 UTC
+Fri Oct 25 09:54:47.024 UTC
 
 IS-IS 1 SRv6 Locators
 Name                  ID       Algo  Prefix                    Status
 ------                ----     ----  ------                    ------
-No 'IPv6 Unicast SRv6 locators' found in IS-IS 1
+POD0                  2        0     fcbb:bb00:44::/48         Active
+  Advertised Level: level-1-2   
+  Level: level-2-only Metric: 1        Administrative Tag: 0         
+  SID behavior: uN (PSP/USD)
+  SID value:    fcbb:bb00:44::
+  Block Length: 32, Node Length: 16, Func Length: 0, Args Length: 80

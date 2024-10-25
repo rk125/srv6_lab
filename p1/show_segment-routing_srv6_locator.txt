@@ -1,1 +1,4 @@
-Fri Oct 25 09:24:58.664 UTC
+Fri Oct 25 09:54:50.589 UTC
+Name                  ID       Algo  Prefix                    Status   Flags   
+--------------------  -------  ----  ------------------------  -------  --------
+POD0                  2        0     fcbb:bb00:1::/48          Up       U

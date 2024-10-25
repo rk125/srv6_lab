@@ -1,7 +1,7 @@
-Fri Oct 25 09:24:34.732 UTC
+Fri Oct 25 09:54:26.211 UTC
 !! Building configuration...
 !! IOS XR Configuration 24.2.2
-!! Last configuration change at Fri Oct 25 09:17:02 2024 by dnac
+!! Last configuration change at Fri Oct 25 09:53:53 2024 by dnac
 !
 hostname pe1
 logging console disable
@@ -77,6 +77,10 @@ router isis 1
  net 49.0000.0000.0011.00
  address-family ipv6 unicast
   metric-style wide
+  segment-routing srv6
+   locator POD0
+   !
+  !
  !
  interface Loopback0
   address-family ipv6 unicast
@@ -90,6 +94,19 @@ router isis 1
  interface GigabitEthernet0/0/0/2
   point-to-point
   address-family ipv6 unicast
+  !
+ !
+!
+segment-routing
+ srv6
+  encapsulation
+   source-address fcbb:bb00:11::1
+  !
+  locators
+   locator POD0
+    micro-segment behavior unode psp-usd
+    prefix fcbb:bb00:11::/48
+   !
   !
  !
 !
