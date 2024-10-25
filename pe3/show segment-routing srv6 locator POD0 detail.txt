@@ -1,16 +1,16 @@
-Fri Oct 25 12:20:38.489 UTC
+Fri Oct 25 12:23:37.601 UTC
 Name                  ID       Algo  Prefix                    Status   Flags   
 --------------------  -------  ----  ------------------------  -------  --------
-POD0                  3        0     fcbb:bb00:11::/48         Up       U       
+POD0                  2        0     fcbb:bb00:33::/48         Up       U       
   (U): Micro-segment (behavior: uN (PSP/USD))
   Interface: 
     Name: srv6-POD0
-    IFH : 0x0000002c
-    IPv6 address: fcbb:bb00:11::/48
-  Number of SIDs: 5
+    IFH : 0x00000024
+    IPv6 address: fcbb:bb00:33::/48
+  Number of SIDs: 4
   LIB Ranges:
     LIB:   0xE000 - 0xFDFF
     ELIB:  0xFE00 - 0xFEFF
     WLIB:  0xFFF00000 - 0xFFF6FFFF
     EWLIB: 0xFFF70000 - 0xFFF7FFFF
-  Created: Oct 25 09:43:39.676 (02:36:58 ago)
+  Created: Oct 25 09:47:06.385 (02:36:31 ago)

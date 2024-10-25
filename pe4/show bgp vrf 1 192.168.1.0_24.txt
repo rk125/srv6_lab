@@ -1,0 +1,22 @@
+Fri Oct 25 12:23:56.728 UTC
+BGP routing table entry for 192.168.1.0/24, Route Distinguisher: 4.4.4.4:0
+Versions:
+  Process           bRIB/RIB   SendTblVer
+  Speaker                  5            5
+Last Modified: Oct 25 12:01:59.197 for 00:21:57
+Paths: (1 available, best #1)
+  Not advertised to any peer
+  Path #1: Received by speaker 0
+  Not advertised to any peer
+  Local
+    fcbb:bb00:11::1 (metric 30) from fcbb:bb00:11::1 (1.1.1.1)
+      Received Label 0xe0040
+      Origin incomplete, metric 0, localpref 100, valid, internal, best, group-best, import-candidate, imported
+      Received Path ID 0, Local Path ID 1, version 5
+      Extended community: RT:100:1 
+      PSID-Type:L3, SubTLV Count:1
+       SubTLV:
+        T:1(Sid information), Sid:fcbb:bb00:11::(Transposed), Behavior:63, SS-TLV Count:1
+         SubSubTLV:
+          T:1(Sid structure):
+      Source AFI: VPNv4 Unicast, Source VRF: default, Source Route Distinguisher: 1.1.1.1:0

@@ -1,9 +1,9 @@
-Fri Oct 25 12:20:37.001 UTC
+Fri Oct 25 12:23:59.029 UTC
 !! Building configuration...
 !! IOS XR Configuration 24.2.2
-!! Last configuration change at Fri Oct 25 12:01:41 2024 by dnac
+!! Last configuration change at Fri Oct 25 10:18:24 2024 by dnac
 !
-hostname pe1
+hostname p1
 logging console disable
 username admin
  group root-lr
@@ -14,16 +14,6 @@ username dnac
  group root-lr
  group cisco-support
  secret 10 $6$6r20OBVU46c/O...$cr.c16dm5f6ahqpHt22GVQkumfoJ6puaqmmzm65BDjWbP/gh2s9LjPuBMaCL8ReFhfdvcTKMee0qL1HeSTEpl/
-!
-vrf 1
- address-family ipv4 unicast
-  import route-target
-   100:1
-  !
-  export route-target
-   100:1
-  !
- !
 !
 vrf mgmt
  address-family ipv4 unicast
@@ -39,42 +29,52 @@ line default
  absolute-timeout 0
  session-timeout 0
 !
-call-home
- service active
- contact smart-licensing
- profile CiscoTAC-1
-  active
-  destination transport-method email disable
-  destination transport-method http
- !
-!
 netconf-yang agent
  ssh
 !
 interface Loopback0
- ipv6 address fcbb:bb00:11::1/128
+ ipv6 address fcbb:bb00:1::1/128
 !
 interface MgmtEth0/RP0/CPU0/0
  vrf mgmt
- ipv4 address 192.168.125.81 255.255.255.0
+ ipv4 address 192.168.125.101 255.255.255.0
 !
 interface GigabitEthernet0/0/0/0
- ipv4 address 10.0.0.1 255.255.255.0
-!
-interface GigabitEthernet0/0/0/1
- description pe1-p1
- ipv6 address 2001:0:0:11::2/64
-!
-interface GigabitEthernet0/0/0/2
- description pe1-p2
- ipv6 address 2001:0:0:21::2/64
-!
-interface GigabitEthernet0/0/0/3
  shutdown
 !
+interface GigabitEthernet0/0/0/1
+ description p1-pe1
+ ipv6 address 2001:0:0:11::1/64
+!
+interface GigabitEthernet0/0/0/2
+ description p1-pe3
+ ipv6 address 2001:0:0:13::1/64
+!
+interface GigabitEthernet0/0/0/3
+ description p1-pe2
+ ipv6 address 2001:0:0:12::1/64
+!
 interface GigabitEthernet0/0/0/4
- vrf 1
- ipv4 address 192.168.1.1 255.255.255.0
+ description p1-pe4
+ ipv6 address 2001:0:0:14::1/64
+!
+interface GigabitEthernet0/0/0/5
+ shutdown
+!
+interface GigabitEthernet0/0/0/6
+ shutdown
+!
+interface GigabitEthernet0/0/0/7
+ shutdown
+!
+interface GigabitEthernet0/0/0/8
+ shutdown
+!
+interface GigabitEthernet0/0/0/9
+ shutdown
+!
+interface GigabitEthernet0/0/0/10
+ shutdown
 !
 router static
  vrf mgmt
@@ -85,7 +85,7 @@ router static
 !
 router isis 1
  is-type level-2-only
- net 49.0000.0000.0011.00
+ net 49.0000.0000.0001.00
  address-family ipv6 unicast
   metric-style wide
   segment-routing srv6
@@ -111,37 +111,30 @@ router isis 1
    fast-reroute per-prefix ti-lfa
   !
  !
-!
-router bgp 100
- bgp router-id 1.1.1.1
- address-family vpnv4 unicast
- !
- neighbor fcbb:bb00:44::1
-  remote-as 100
-  update-source Loopback0
-  address-family vpnv4 unicast
+ interface GigabitEthernet0/0/0/3
+  point-to-point
+  address-family ipv6 unicast
+   fast-reroute per-prefix
+   fast-reroute per-prefix ti-lfa
   !
  !
- vrf 1
-  rd auto
-  address-family ipv4 unicast
-   segment-routing srv6
-    locator POD0
-    alloc mode per-vrf
-   !
-   redistribute connected
+ interface GigabitEthernet0/0/0/4
+  point-to-point
+  address-family ipv6 unicast
+   fast-reroute per-prefix
+   fast-reroute per-prefix ti-lfa
   !
  !
 !
 segment-routing
  srv6
   encapsulation
-   source-address fcbb:bb00:11::1
+   source-address fcbb:bb00:1::1
   !
   locators
    locator POD0
     micro-segment behavior unode psp-usd
-    prefix fcbb:bb00:11::/48
+    prefix fcbb:bb00:1::/48
    !
   !
  !
@@ -152,6 +145,5 @@ ssh server v2
 ssh server vrf mgmt
 ssh server netconf vrf mgmt
 ssh server netconf vrf default
-crypto ca fqdn-check ip-address allow
 crypto key generate ecdsa nistp521
 end

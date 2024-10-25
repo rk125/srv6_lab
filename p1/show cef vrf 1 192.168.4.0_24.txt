@@ -1,0 +1,2 @@
+Fri Oct 25 12:24:07.029 UTC
+Vrf 1 not configured or does not exist

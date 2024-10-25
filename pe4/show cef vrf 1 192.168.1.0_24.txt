@@ -1,0 +1,25 @@
+Fri Oct 25 12:23:55.425 UTC
+192.168.1.0/24, version 7, SRv6 Headend, internal 0x5000001 0x30 (ptr 0xe8961e8) [1], 0x400 (0xea19c18), 0x0 (0x23163518)
+ Updated Oct 25 12:01:58.956
+ Prefix Len 24, traffic index 0, precedence n/a, priority 3
+  gateway array (0x2331f098) reference count 1, flags 0x10, source rib (7), 0 backups
+                [2 type 3 flags 0x8441 (0xe951eb0) ext 0x0 (0x0)]
+  LW-LDI[type=3, refc=1, ptr=0xea19c18, sh-ldi=0xe951eb0]
+  gateway array update type-time 1 Oct 25 12:01:58.956
+ LDI Update time Oct 25 12:01:58.983
+ LW-LDI-TS Oct 25 12:01:58.983
+
+  Level 1 - Load distribution: 0
+  [0] via fcbb:bb00:11::/128, recursive
+
+   via fcbb:bb00:11::/128, 3 dependencies, recursive [flags 0x6000]
+    path-idx 0 NHID 0x0 [0xe52e8c0 0x0]
+    next hop VRF - 'default', table - 0xe0800000
+    next hop fcbb:bb00:11::/128 via fcbb:bb00:11::/48
+    SRv6 H.Encaps.Red SID-list {fcbb:bb00:11:e004::}
+
+    Load distribution: 0 1 (refcount 2)
+
+    Hash  OK  Interface                 Address
+    0     Y   GigabitEthernet0/0/0/2    remote         
+    1     Y   GigabitEthernet0/0/0/1    remote

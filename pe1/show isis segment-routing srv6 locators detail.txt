@@ -1,4 +1,4 @@
-Fri Oct 25 12:20:39.046 UTC
+Fri Oct 25 12:23:13.213 UTC
 
 IS-IS 1 SRv6 Locators
 Name                  ID       Algo  Prefix                    Status

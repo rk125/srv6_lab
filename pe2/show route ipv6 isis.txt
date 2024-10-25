@@ -1,0 +1,50 @@
+Fri Oct 25 12:23:26.391 UTC
+
+i L2 2001:0:0:11::/64 
+      [115/20] via fe80::5054:ff:fe1f:4834, 02:07:06, GigabitEthernet0/0/0/2
+      [115/30] via fe80::5054:ff:fe0e:6265, 02:07:06, GigabitEthernet0/0/0/1 (!)
+i L2 2001:0:0:13::/64 
+      [115/20] via fe80::5054:ff:fe1f:4834, 02:07:06, GigabitEthernet0/0/0/2
+      [115/30] via fe80::5054:ff:fe0e:6265, 02:07:06, GigabitEthernet0/0/0/1 (!)
+i L2 2001:0:0:14::/64 
+      [115/20] via fe80::5054:ff:fe1f:4834, 02:07:06, GigabitEthernet0/0/0/2
+      [115/30] via fe80::5054:ff:fe0e:6265, 02:07:06, GigabitEthernet0/0/0/1 (!)
+i L2 2001:0:0:21::/64 
+      [115/30] via fe80::5054:ff:fe1f:4834, 02:07:06, GigabitEthernet0/0/0/2 (!)
+      [115/20] via fe80::5054:ff:fe0e:6265, 02:07:06, GigabitEthernet0/0/0/1
+i L2 2001:0:0:23::/64 
+      [115/30] via fe80::5054:ff:fe1f:4834, 02:07:06, GigabitEthernet0/0/0/2 (!)
+      [115/20] via fe80::5054:ff:fe0e:6265, 02:07:06, GigabitEthernet0/0/0/1
+i L2 2001:0:0:24::/64 
+      [115/30] via fe80::5054:ff:fe1f:4834, 02:07:06, GigabitEthernet0/0/0/2 (!)
+      [115/20] via fe80::5054:ff:fe0e:6265, 02:07:06, GigabitEthernet0/0/0/1
+i L2 fcbb:bb00:1::/48 
+      [115/11] via fe80::5054:ff:fe1f:4834, 02:07:06, GigabitEthernet0/0/0/2
+      [115/31] via fe80::5054:ff:fe0e:6265, 02:07:06, GigabitEthernet0/0/0/1 (!)
+i L2 fcbb:bb00:1::1/128 
+      [115/20] via fe80::5054:ff:fe1f:4834, 02:07:06, GigabitEthernet0/0/0/2
+      [115/40] via fe80::5054:ff:fe0e:6265, 02:07:06, GigabitEthernet0/0/0/1 (!)
+i L2 fcbb:bb00:2::/48 
+      [115/31] via fe80::5054:ff:fe1f:4834, 02:07:06, GigabitEthernet0/0/0/2 (!)
+      [115/11] via fe80::5054:ff:fe0e:6265, 02:07:06, GigabitEthernet0/0/0/1
+i L2 fcbb:bb00:2::1/128 
+      [115/40] via fe80::5054:ff:fe1f:4834, 02:07:06, GigabitEthernet0/0/0/2 (!)
+      [115/20] via fe80::5054:ff:fe0e:6265, 02:07:06, GigabitEthernet0/0/0/1
+i L2 fcbb:bb00:11::/48 
+      [115/21] via fe80::5054:ff:fe1f:4834, 02:07:06, GigabitEthernet0/0/0/2
+      [115/21] via fe80::5054:ff:fe0e:6265, 02:07:06, GigabitEthernet0/0/0/1
+i L2 fcbb:bb00:11::1/128 
+      [115/30] via fe80::5054:ff:fe1f:4834, 02:07:06, GigabitEthernet0/0/0/2
+      [115/30] via fe80::5054:ff:fe0e:6265, 02:07:06, GigabitEthernet0/0/0/1
+i L2 fcbb:bb00:33::/48 
+      [115/21] via fe80::5054:ff:fe1f:4834, 02:07:06, GigabitEthernet0/0/0/2
+      [115/21] via fe80::5054:ff:fe0e:6265, 02:07:06, GigabitEthernet0/0/0/1
+i L2 fcbb:bb00:33::1/128 
+      [115/30] via fe80::5054:ff:fe1f:4834, 02:07:06, GigabitEthernet0/0/0/2
+      [115/30] via fe80::5054:ff:fe0e:6265, 02:07:06, GigabitEthernet0/0/0/1
+i L2 fcbb:bb00:44::/48 
+      [115/21] via fe80::5054:ff:fe1f:4834, 02:07:06, GigabitEthernet0/0/0/2
+      [115/21] via fe80::5054:ff:fe0e:6265, 02:07:06, GigabitEthernet0/0/0/1
+i L2 fcbb:bb00:44::1/128 
+      [115/30] via fe80::5054:ff:fe1f:4834, 02:07:06, GigabitEthernet0/0/0/2
+      [115/30] via fe80::5054:ff:fe0e:6265, 02:07:06, GigabitEthernet0/0/0/1

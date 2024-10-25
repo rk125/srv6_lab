@@ -1,0 +1,19 @@
+Fri Oct 25 12:23:19.565 UTC
+BGP routing table entry for 192.168.1.0/24, Route Distinguisher: 1.1.1.1:0
+Versions:
+  Process           bRIB/RIB   SendTblVer
+  Speaker                  2            2
+    SRv6-VPN SID: fcbb:bb00:11:e004::/64
+    Format: f3216
+Last Modified: Oct 25 12:01:43.080 for 00:21:36
+Paths: (1 available, best #1)
+  Advertised to PE peers (in unique update groups):
+    fcbb:bb00:44::1                         
+  Path #1: Received by speaker 0
+  Advertised to PE peers (in unique update groups):
+    fcbb:bb00:44::1                         
+  Local
+    0.0.0.0 from 0.0.0.0 (1.1.1.1)
+      Origin incomplete, metric 0, localpref 100, weight 32768, valid, redistributed, best, group-best, import-candidate
+      Received Path ID 0, Local Path ID 1, version 2
+      Extended community: RT:100:1
