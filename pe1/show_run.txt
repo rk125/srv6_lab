@@ -1,7 +1,7 @@
-Fri Oct 25 09:54:26.211 UTC
+Fri Oct 25 10:19:57.727 UTC
 !! Building configuration...
 !! IOS XR Configuration 24.2.2
-!! Last configuration change at Fri Oct 25 09:53:53 2024 by dnac
+!! Last configuration change at Fri Oct 25 10:14:51 2024 by dnac
 !
 hostname pe1
 logging console disable
@@ -89,11 +89,15 @@ router isis 1
  interface GigabitEthernet0/0/0/1
   point-to-point
   address-family ipv6 unicast
+   fast-reroute per-prefix
+   fast-reroute per-prefix ti-lfa
   !
  !
  interface GigabitEthernet0/0/0/2
   point-to-point
   address-family ipv6 unicast
+   fast-reroute per-prefix
+   fast-reroute per-prefix ti-lfa
   !
  !
 !

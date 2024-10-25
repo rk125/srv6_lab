@@ -1,4 +1,4 @@
-Fri Oct 25 09:54:58.546 UTC
+Fri Oct 25 10:20:29.543 UTC
 
 *** Locator: 'POD0' *** 
 
@@ -8,4 +8,8 @@ fcbb:bb00:2::               uN (PSP/USD)      'default':2                       
 fcbb:bb00:2:e000::          uA (PSP/USD)      [Gi0/0/0/3, Link-Local]:0         isis-1              InUse  Y 
 fcbb:bb00:2:e001::          uA (PSP/USD)      [Gi0/0/0/1, Link-Local]:0         isis-1              InUse  Y 
 fcbb:bb00:2:e002::          uA (PSP/USD)      [Gi0/0/0/2, Link-Local]:0         isis-1              InUse  Y 
-fcbb:bb00:2:e003::          uA (PSP/USD)      [Gi0/0/0/4, Link-Local]:0         isis-1              InUse  Y
+fcbb:bb00:2:e003::          uA (PSP/USD)      [Gi0/0/0/4, Link-Local]:0         isis-1              InUse  Y 
+fcbb:bb00:2:e004::          uA (PSP/USD)      [Gi0/0/0/3, Link-Local]:0:P       isis-1              InUse  Y 
+fcbb:bb00:2:e005::          uA (PSP/USD)      [Gi0/0/0/1, Link-Local]:0:P       isis-1              InUse  Y 
+fcbb:bb00:2:e006::          uA (PSP/USD)      [Gi0/0/0/2, Link-Local]:0:P       isis-1              InUse  Y 
+fcbb:bb00:2:e007::          uA (PSP/USD)      [Gi0/0/0/4, Link-Local]:0:P       isis-1              InUse  Y

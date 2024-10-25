@@ -1,4 +1,4 @@
-Fri Oct 25 09:54:47.530 UTC
+Fri Oct 25 10:20:18.092 UTC
 
 *** Locator: 'POD0' *** 
 
@@ -6,4 +6,6 @@ SID                         Behavior          Context                           
 --------------------------  ----------------  --------------------------------  ------------------  -----  --
 fcbb:bb00:44::              uN (PSP/USD)      'default':68                      sidmgr              InUse  Y 
 fcbb:bb00:44:e000::         uA (PSP/USD)      [Gi0/0/0/2, Link-Local]:0         isis-1              InUse  Y 
-fcbb:bb00:44:e001::         uA (PSP/USD)      [Gi0/0/0/1, Link-Local]:0         isis-1              InUse  Y
+fcbb:bb00:44:e001::         uA (PSP/USD)      [Gi0/0/0/1, Link-Local]:0         isis-1              InUse  Y 
+fcbb:bb00:44:e002::         uA (PSP/USD)      [Gi0/0/0/2, Link-Local]:0:P       isis-1              InUse  Y 
+fcbb:bb00:44:e003::         uA (PSP/USD)      [Gi0/0/0/1, Link-Local]:0:P       isis-1              InUse  Y
