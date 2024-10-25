@@ -1,3 +1,27 @@
-Fri Oct 25 09:00:50.526 UTC
+Fri Oct 25 09:24:37.581 UTC
 
-% No matching routes found
+i L2 2001:0:0:12::/64 
+      [115/20] via fe80::5054:ff:fe03:536, 00:02:57, GigabitEthernet0/0/0/1
+i L2 2001:0:0:13::/64 
+      [115/20] via fe80::5054:ff:fe03:536, 00:02:57, GigabitEthernet0/0/0/1
+i L2 2001:0:0:14::/64 
+      [115/20] via fe80::5054:ff:fe03:536, 00:02:57, GigabitEthernet0/0/0/1
+i L2 2001:0:0:22::/64 
+      [115/20] via fe80::5054:ff:fe18:e10b, 00:02:07, GigabitEthernet0/0/0/2
+i L2 2001:0:0:23::/64 
+      [115/20] via fe80::5054:ff:fe18:e10b, 00:02:07, GigabitEthernet0/0/0/2
+i L2 2001:0:0:24::/64 
+      [115/20] via fe80::5054:ff:fe18:e10b, 00:02:07, GigabitEthernet0/0/0/2
+i L2 fcbb:bb00:1::1/128 
+      [115/20] via fe80::5054:ff:fe03:536, 00:02:57, GigabitEthernet0/0/0/1
+i L2 fcbb:bb00:2::1/128 
+      [115/20] via fe80::5054:ff:fe18:e10b, 00:02:07, GigabitEthernet0/0/0/2
+i L2 fcbb:bb00:22::1/128 
+      [115/30] via fe80::5054:ff:fe18:e10b, 00:01:54, GigabitEthernet0/0/0/2
+      [115/30] via fe80::5054:ff:fe03:536, 00:01:54, GigabitEthernet0/0/0/1
+i L2 fcbb:bb00:33::1/128 
+      [115/30] via fe80::5054:ff:fe18:e10b, 00:01:54, GigabitEthernet0/0/0/2
+      [115/30] via fe80::5054:ff:fe03:536, 00:01:54, GigabitEthernet0/0/0/1
+i L2 fcbb:bb00:44::1/128 
+      [115/30] via fe80::5054:ff:fe18:e10b, 00:01:54, GigabitEthernet0/0/0/2
+      [115/30] via fe80::5054:ff:fe03:536, 00:01:54, GigabitEthernet0/0/0/1

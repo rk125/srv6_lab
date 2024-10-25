@@ -1,3 +1,6 @@
-Fri Oct 25 09:01:02.443 UTC
+Fri Oct 25 09:24:48.478 UTC
 
-No IS-IS instances found
+IS-IS 1 SRv6 Locators
+Name                  ID       Algo  Prefix                    Status
+------                ----     ----  ------                    ------
+No 'IPv6 Unicast SRv6 locators' found in IS-IS 1

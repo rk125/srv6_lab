@@ -1,7 +1,7 @@
-Fri Oct 25 09:01:00.647 UTC
+Fri Oct 25 09:24:46.544 UTC
 !! Building configuration...
 !! IOS XR Configuration 24.2.2
-!! Last configuration change at Fri Oct 25 08:58:56 2024 by dnac
+!! Last configuration change at Fri Oct 25 09:19:22 2024 by dnac
 !
 hostname pe3
 logging console disable
@@ -60,6 +60,27 @@ router static
  vrf mgmt
   address-family ipv4 unicast
    0.0.0.0/0 192.168.125.1
+  !
+ !
+!
+router isis 1
+ is-type level-2-only
+ net 49.0000.0000.0033.00
+ address-family ipv6 unicast
+  metric-style wide
+ !
+ interface Loopback0
+  address-family ipv6 unicast
+  !
+ !
+ interface GigabitEthernet0/0/0/1
+  point-to-point
+  address-family ipv6 unicast
+  !
+ !
+ interface GigabitEthernet0/0/0/2
+  point-to-point
+  address-family ipv6 unicast
   !
  !
 !
