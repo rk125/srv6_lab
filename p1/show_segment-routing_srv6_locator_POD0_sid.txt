@@ -1,7 +1,4 @@
-Fri Oct 25 12:07:56.704 UTC
-
-*** Locator: 'POD0' *** 
-
+Fri Oct 25 12:07:58.460 UTC
 SID                         Behavior          Context                           Owner               State  RW
 --------------------------  ----------------  --------------------------------  ------------------  -----  --
 fcbb:bb00:1::               uN (PSP/USD)      'default':1                       sidmgr              InUse  Y 

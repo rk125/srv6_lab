@@ -1,7 +1,7 @@
-Fri Oct 25 10:20:15.248 UTC
+Fri Oct 25 12:07:47.719 UTC
 !! Building configuration...
 !! IOS XR Configuration 24.2.2
-!! Last configuration change at Fri Oct 25 10:17:44 2024 by dnac
+!! Last configuration change at Fri Oct 25 12:01:51 2024 by dnac
 !
 hostname pe4
 logging console disable
@@ -14,6 +14,16 @@ username dnac
  group root-lr
  group cisco-support
  secret 10 $6$6r20OBVU46c/O...$cr.c16dm5f6ahqpHt22GVQkumfoJ6puaqmmzm65BDjWbP/gh2s9LjPuBMaCL8ReFhfdvcTKMee0qL1HeSTEpl/
+!
+vrf 1
+ address-family ipv4 unicast
+  import route-target
+   100:1
+  !
+  export route-target
+   100:1
+  !
+ !
 !
 vrf mgmt
  address-family ipv4 unicast
@@ -54,7 +64,8 @@ interface GigabitEthernet0/0/0/3
  shutdown
 !
 interface GigabitEthernet0/0/0/4
- shutdown
+ vrf 1
+ ipv4 address 192.168.4.1 255.255.255.0
 !
 interface GigabitEthernet0/0/0/5
  shutdown
@@ -92,6 +103,27 @@ router isis 1
   address-family ipv6 unicast
    fast-reroute per-prefix
    fast-reroute per-prefix ti-lfa
+  !
+ !
+!
+router bgp 100
+ bgp router-id 4.4.4.4
+ address-family vpnv4 unicast
+ !
+ neighbor fcbb:bb00:11::1
+  remote-as 100
+  update-source Loopback0
+  address-family vpnv4 unicast
+  !
+ !
+ vrf 1
+  rd auto
+  address-family ipv4 unicast
+   segment-routing srv6
+    locator POD0
+    alloc mode per-vrf
+   !
+   redistribute connected
   !
  !
 !
