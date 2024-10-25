@@ -1,0 +1,93 @@
+Fri Oct 25 09:01:10.769 UTC
+!! Building configuration...
+!! IOS XR Configuration 24.2.2
+!! Last configuration change at Fri Oct 25 08:55:30 2024 by dnac
+!
+hostname p1
+logging console disable
+username admin
+ group root-lr
+ group cisco-support
+ secret 10 $6$TIgzI3vD3yH/I...$YGiByaxbHdqr915CLbaqelFJxuNHyhk3enNrus6aHPOhF8qKjxP4.LlEDE2KaIjhXbEicFmVBiKqlCMKvDaTq1
+!
+username dnac
+ group root-lr
+ group cisco-support
+ secret 10 $6$6r20OBVU46c/O...$cr.c16dm5f6ahqpHt22GVQkumfoJ6puaqmmzm65BDjWbP/gh2s9LjPuBMaCL8ReFhfdvcTKMee0qL1HeSTEpl/
+!
+vrf mgmt
+ address-family ipv4 unicast
+ !
+!
+line console
+ exec-timeout 0 0
+ absolute-timeout 0
+ session-timeout 0
+!
+line default
+ exec-timeout 0 0
+ absolute-timeout 0
+ session-timeout 0
+!
+netconf-yang agent
+ ssh
+!
+interface Loopback0
+ ipv6 address fcbb:bb00:1::1/128
+!
+interface MgmtEth0/RP0/CPU0/0
+ vrf mgmt
+ ipv4 address 192.168.125.101 255.255.255.0
+!
+interface GigabitEthernet0/0/0/0
+ shutdown
+!
+interface GigabitEthernet0/0/0/1
+ description p1-pe1
+ ipv6 address 2001:0:0:11::1/64
+!
+interface GigabitEthernet0/0/0/2
+ description p1-pe3
+ ipv6 address 2001:0:0:13::1/64
+!
+interface GigabitEthernet0/0/0/3
+ description p1-pe2
+ ipv6 address 2001:0:0:12::1/64
+!
+interface GigabitEthernet0/0/0/4
+ description p1-pe4
+ ipv6 address 2001:0:0:14::1/64
+!
+interface GigabitEthernet0/0/0/5
+ shutdown
+!
+interface GigabitEthernet0/0/0/6
+ shutdown
+!
+interface GigabitEthernet0/0/0/7
+ shutdown
+!
+interface GigabitEthernet0/0/0/8
+ shutdown
+!
+interface GigabitEthernet0/0/0/9
+ shutdown
+!
+interface GigabitEthernet0/0/0/10
+ shutdown
+!
+router static
+ vrf mgmt
+  address-family ipv4 unicast
+   0.0.0.0/0 192.168.125.1
+  !
+ !
+!
+netconf agent tty
+!
+ssh server v2
+ssh server vrf mgmt
+ssh server netconf vrf mgmt
+ssh server netconf vrf default
+crypto key generate ecdsa nistp521
+end

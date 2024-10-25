@@ -1,0 +1,3 @@
+Fri Oct 25 09:00:57.325 UTC
+
+No IS-IS instances found
