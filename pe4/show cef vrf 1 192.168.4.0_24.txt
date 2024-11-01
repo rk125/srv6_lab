@@ -1,4 +1,4 @@
-Fri Oct 25 12:23:56.055 UTC
+Thu Oct 31 18:21:10.598 UTC
 192.168.4.0/24, version 6, attached, connected, internal 0x3000061 0x0 (ptr 0xe895dc8) [1], 0x400 (0xea19c98), 0x0 (0x0)
  Updated Oct 25 11:59:10.534 
  remote adjacency to GigabitEthernet0/0/0/4
@@ -6,9 +6,9 @@
   gateway array (0xe8ade98) reference count 1, flags 0x0, source rib (7), 0 backups
                 [2 type 3 flags 0x8401 (0xe951f60) ext 0x0 (0x0)]
   LW-LDI[type=3, refc=1, ptr=0xea19c98, sh-ldi=0xe951f60]
-  gateway array update type-time 1 Oct 25 11:59:10.535
- LDI Update time Oct 25 11:59:10.536
- LW-LDI-TS Oct 25 11:59:10.536
+  gateway array update type-time 1 Oct 25 11:59:10.534
+ LDI Update time Oct 25 11:59:10.535
+ LW-LDI-TS Oct 25 11:59:10.535
    via GigabitEthernet0/0/0/4, 2 dependencies, weight 0, class 0 [flags 0x8]
     path-idx 0 NHID 0x0 [0xffea4c8 0x0]
     remote adjacency

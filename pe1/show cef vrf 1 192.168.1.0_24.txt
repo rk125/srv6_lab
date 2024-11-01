@@ -1,16 +1,16 @@
-Fri Oct 25 12:23:18.216 UTC
-192.168.1.0/24, version 1, attached, connected, internal 0x3000061 0x0 (ptr 0xe78d718) [1], 0x400 (0xe90fcd8), 0x0 (0x0)
- Updated Oct 25 11:58:43.240 
+Thu Oct 31 18:20:32.135 UTC
+192.168.1.0/24, version 2, attached, connected, internal 0x3000061 0x0 (ptr 0xdf96398) [1], 0x400 (0xea198d8), 0x0 (0x0)
+ Updated Oct 31 15:47:26.227 
  remote adjacency to GigabitEthernet0/0/0/4
  Prefix Len 24, traffic index 0, precedence n/a, priority 0
-  gateway array (0xe7a3f98) reference count 1, flags 0x0, source rib (7), 0 backups
-                [2 type 3 flags 0x8401 (0xe847fb8) ext 0x0 (0x0)]
-  LW-LDI[type=3, refc=1, ptr=0xe90fcd8, sh-ldi=0xe847fb8]
-  gateway array update type-time 1 Oct 25 11:58:43.240
- LDI Update time Oct 25 11:58:43.243
- LW-LDI-TS Oct 25 11:58:43.243
+  gateway array (0xe8acf98) reference count 1, flags 0x0, source rib (7), 0 backups
+                [2 type 3 flags 0x8401 (0xe951a38) ext 0x0 (0x0)]
+  LW-LDI[type=3, refc=1, ptr=0xea198d8, sh-ldi=0xe951a38]
+  gateway array update type-time 1 Oct 31 15:47:26.227
+ LDI Update time Oct 31 15:47:26.229
+ LW-LDI-TS Oct 31 15:47:26.229
    via GigabitEthernet0/0/0/4, 2 dependencies, weight 0, class 0 [flags 0x8]
-    path-idx 0 NHID 0x0 [0x22eb5690 0x0]
+    path-idx 0 NHID 0x0 [0x10af0268 0x0]
     remote adjacency
 
     Load distribution: 0 (refcount 2)

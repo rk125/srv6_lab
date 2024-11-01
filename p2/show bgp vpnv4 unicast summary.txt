@@ -1,2 +1,17 @@
-Fri Oct 25 12:24:16.644 UTC
-% BGP instance 'default' not active
+Thu Oct 31 18:21:30.126 UTC
+BGP router identifier 2.2.2.2, local AS number 100
+BGP generic scan interval 60 secs
+Non-stop routing is enabled
+BGP table state: Active
+Table ID: 0x0
+BGP table nexthop route policy: 
+BGP main routing table version 1
+BGP NSR Initial initsync version 1 (Reached)
+BGP NSR/ISSU Sync-Group versions 0/0
+BGP scan interval 60 secs
+
+BGP is operating in STANDALONE mode.
+
+
+Process    RcvTblVer     bRIB/RIB     LabelVer    ImportVer    SendTblVer   StandbyVer
+Speaker            1             1             1             1             1             0

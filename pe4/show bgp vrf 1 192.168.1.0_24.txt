@@ -1,9 +1,9 @@
-Fri Oct 25 12:23:56.728 UTC
+Thu Oct 31 18:21:11.263 UTC
 BGP routing table entry for 192.168.1.0/24, Route Distinguisher: 4.4.4.4:0
 Versions:
   Process           bRIB/RIB   SendTblVer
-  Speaker                  5            5
-Last Modified: Oct 25 12:01:59.197 for 00:21:57
+  Speaker                  9            9
+Last Modified: Oct 31 15:47:39.197 for 02:33:32
 Paths: (1 available, best #1)
   Not advertised to any peer
   Path #1: Received by speaker 0
@@ -12,7 +12,7 @@ Paths: (1 available, best #1)
     fcbb:bb00:11::1 (metric 30) from fcbb:bb00:11::1 (1.1.1.1)
       Received Label 0xe0040
       Origin incomplete, metric 0, localpref 100, valid, internal, best, group-best, import-candidate, imported
-      Received Path ID 0, Local Path ID 1, version 5
+      Received Path ID 0, Local Path ID 1, version 9
       Extended community: RT:100:1 
       PSID-Type:L3, SubTLV Count:1
        SubTLV:

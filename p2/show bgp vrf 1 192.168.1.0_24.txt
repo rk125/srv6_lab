@@ -1,2 +1,2 @@
-Fri Oct 25 12:24:19.616 UTC
-% BGP instance 'default' not active
+Thu Oct 31 18:21:33.921 UTC
+% None of the requested address families are configured for instance 'default'(37737)

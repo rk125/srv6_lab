@@ -1,9 +1,9 @@
-Fri Oct 25 12:23:25.277 UTC
+Thu Oct 31 18:20:40.004 UTC
 
 IS-IS 1 SRv6 Locators
 Name                  ID       Algo  Prefix                    Status
 ------                ----     ----  ------                    ------
-POD0                  2        0     fcbb:bb00:22::/48         Active
+POD0                  1        0     fcbb:bb00:22::/48         Active
   Advertised Level: level-1-2   
   Level: level-2-only Metric: 1        Administrative Tag: 0         
   SID behavior: uN (PSP/USD)

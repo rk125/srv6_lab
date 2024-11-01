@@ -1,12 +1,12 @@
-Fri Oct 25 12:23:16.882 UTC
+Thu Oct 31 18:20:30.630 UTC
 BGP router identifier 1.1.1.1, local AS number 100
 BGP generic scan interval 60 secs
 Non-stop routing is enabled
 BGP table state: Active
 Table ID: 0x0
 BGP table nexthop route policy: 
-BGP main routing table version 5
-BGP NSR Initial initsync version 1 (Reached)
+BGP main routing table version 8
+BGP NSR Initial initsync version 6 (Reached)
 BGP NSR/ISSU Sync-Group versions 0/0
 BGP scan interval 60 secs
 
@@ -15,11 +15,11 @@ Status codes: s suppressed, d damped, h history, * valid, > best
 Origin codes: i - IGP, e - EGP, ? - incomplete
    Network            Next Hop                            Received Sid
 Route Distinguisher: 1.1.1.1:0 (default for vrf 1)
-Route Distinguisher Version: 5
+Route Distinguisher Version: 8
 *> 192.168.1.0/24     0.0.0.0                             NO SRv6 Sid
 *>i192.168.4.0/24     fcbb:bb00:44::1                     fcbb:bb00:44:e004::
 Route Distinguisher: 4.4.4.4:0
-Route Distinguisher Version: 4
+Route Distinguisher Version: 5
 *>i192.168.4.0/24     fcbb:bb00:44::1                     fcbb:bb00:44:e004::
 
 Processed 3 prefixes, 3 paths

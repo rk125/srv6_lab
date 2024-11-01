@@ -1,7 +1,7 @@
-Fri Oct 25 12:23:23.034 UTC
+Thu Oct 31 18:20:37.257 UTC
 !! Building configuration...
 !! IOS XR Configuration 24.2.2
-!! Last configuration change at Fri Oct 25 11:35:05 2024 by admin
+!! Last configuration change at Thu Oct 31 17:50:37 2024 by dnac
 !
 hostname pe2
 logging console disable
@@ -40,7 +40,10 @@ interface MgmtEth0/RP0/CPU0/0
  ipv4 address 192.168.125.82 255.255.255.0
 !
 interface GigabitEthernet0/0/0/0
- ipv4 address 10.0.0.2 255.255.255.0
+ description sw1 g1/2
+!
+interface GigabitEthernet0/0/0/0.2 l2transport
+ encapsulation dot1q 200
 !
 interface GigabitEthernet0/0/0/1
  description pe2-p2
@@ -89,6 +92,44 @@ router isis 1
   address-family ipv6 unicast
    fast-reroute per-prefix
    fast-reroute per-prefix ti-lfa
+  !
+ !
+!
+router bgp 100
+ bgp router-id 2.2.2.2
+ address-family l2vpn evpn
+ !
+ neighbor fcbb:bb00:2::1
+  remote-as 100
+  update-source Loopback0
+  address-family l2vpn evpn
+  !
+ !
+!
+evpn
+ evi 200 segment-routing srv6
+  advertise-mac
+  !
+  locator POD0
+  !
+ !
+ interface GigabitEthernet0/0/0/0
+  ethernet-segment
+   identifier type 0 1.1.1.1.1.1.1.1.0
+  !
+ !
+ segment-routing srv6
+  locator POD0
+  !
+ !
+!
+l2vpn
+ bridge group POD0
+  bridge-domain POD0
+   interface GigabitEthernet0/0/0/0.2
+   !
+   evi 200 segment-routing srv6
+   !
   !
  !
 !

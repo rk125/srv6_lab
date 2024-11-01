@@ -1,4 +1,4 @@
-Fri Oct 25 12:23:54.720 UTC
+Thu Oct 31 18:21:09.160 UTC
 
 Codes: C - connected, S - static, R - RIP, B - BGP, (>) - Diversion path
        D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
@@ -12,6 +12,6 @@ Codes: C - connected, S - static, R - RIP, B - BGP, (>) - Diversion path
 
 Gateway of last resort is not set
 
-B    192.168.1.0/24 [200/0] via fcbb:bb00:11::1 (nexthop in vrf default), 00:21:55
-C    192.168.4.0/24 is directly connected, 00:24:44, GigabitEthernet0/0/0/4
-L    192.168.4.1/32 is directly connected, 00:24:44, GigabitEthernet0/0/0/4
+B    192.168.1.0/24 [200/0] via fcbb:bb00:11::1 (nexthop in vrf default), 02:33:30
+C    192.168.4.0/24 is directly connected, 6d06h, GigabitEthernet0/0/0/4
+L    192.168.4.1/32 is directly connected, 6d06h, GigabitEthernet0/0/0/4

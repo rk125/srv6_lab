@@ -1,0 +1,8 @@
+Thu Oct 31 18:20:58.912 UTC
+
+VPN-ID     Encap      MAC address    IP address                               Nexthop                                 Label    SID                                    
+---------- ---------- -------------- ---------------------------------------- --------------------------------------- -------- ---------------------------------------
+200        SRv6       5254.0001.0422 ::                                       fcbb:bb00:11::1                         IMP-NULL fcbb:bb00:11:e005::                    
+200        SRv6       5254.000d.0c7a ::                                       GigabitEthernet0/0/0/0.2                0        fcbb:bb00:33:e004::                    
+200        SRv6       5254.0011.a458 ::                                       GigabitEthernet0/0/0/0.2                0        fcbb:bb00:33:e004::                    
+200        SRv6       5254.001b.2566 ::                                       fcbb:bb00:11::1                         IMP-NULL fcbb:bb00:11:e005::

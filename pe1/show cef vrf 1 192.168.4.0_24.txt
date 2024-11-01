@@ -1,19 +1,19 @@
-Fri Oct 25 12:23:18.948 UTC
-192.168.4.0/24, version 3, SRv6 Headend, internal 0x5000001 0x30 (ptr 0xe7837c8) [1], 0x400 (0xe90fd98), 0x0 (0x2313c170)
- Updated Oct 25 12:01:53.532
+Thu Oct 31 18:20:32.784 UTC
+192.168.4.0/24, version 3, SRv6 Headend, internal 0x5000001 0x30 (ptr 0xe88eb28) [1], 0x400 (0xea19998), 0x0 (0xfe051b8)
+ Updated Oct 31 15:47:38.634
  Prefix Len 24, traffic index 0, precedence n/a, priority 3
-  gateway array (0x23300098) reference count 1, flags 0x10, source rib (7), 0 backups
-                [2 type 3 flags 0x8441 (0xe8480c0) ext 0x0 (0x0)]
-  LW-LDI[type=3, refc=1, ptr=0xe90fd98, sh-ldi=0xe8480c0]
-  gateway array update type-time 1 Oct 25 12:01:53.532
- LDI Update time Oct 25 12:01:53.551
- LW-LDI-TS Oct 25 12:01:53.551
+  gateway array (0x23323098) reference count 1, flags 0x10, source rib (7), 0 backups
+                [2 type 3 flags 0x8441 (0xe951b40) ext 0x0 (0x0)]
+  LW-LDI[type=3, refc=1, ptr=0xea19998, sh-ldi=0xe951b40]
+  gateway array update type-time 1 Oct 31 15:47:38.635
+ LDI Update time Oct 31 15:47:38.653
+ LW-LDI-TS Oct 31 15:47:38.653
 
   Level 1 - Load distribution: 0
   [0] via fcbb:bb00:44::/128, recursive
 
    via fcbb:bb00:44::/128, 3 dependencies, recursive [flags 0x6000]
-    path-idx 0 NHID 0x0 [0xe52eb88 0x0]
+    path-idx 0 NHID 0x0 [0xe637fc8 0x0]
     next hop VRF - 'default', table - 0xe0800000
     next hop fcbb:bb00:44::/128 via fcbb:bb00:44::/48
     SRv6 H.Encaps.Red SID-list {fcbb:bb00:44:e004::}

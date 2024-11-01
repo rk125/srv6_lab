@@ -1,8 +1,8 @@
 Building configuration...
 
-Current configuration : 3565 bytes
+Current configuration : 3645 bytes
 !
-! Last configuration change at 11:35:06 UTC Fri Oct 25 2024
+! Last configuration change at 16:50:59 UTC Thu Oct 31 2024 by dnac
 !
 version 17.12
 service timestamps debug datetime msec
@@ -108,8 +108,12 @@ interface GigabitEthernet1
  negotiation auto
 !
 interface GigabitEthernet2
- ip address 10.0.0.254 255.255.255.0
+ no ip address
  negotiation auto
+!
+interface GigabitEthernet2.200
+ encapsulation dot1Q 200
+ ip address 200.0.0.1 255.255.255.0
 !
 interface GigabitEthernet3
  no ip address

@@ -1,11 +1,13 @@
-Fri Oct 25 12:23:38.602 UTC
+Thu Oct 31 18:20:52.120 UTC
 
 *** Locator: 'POD0' *** 
 
 SID                         Behavior          Context                           Owner               State  RW
 --------------------------  ----------------  --------------------------------  ------------------  -----  --
 fcbb:bb00:33::              uN (PSP/USD)      'default':51                      sidmgr              InUse  Y 
-fcbb:bb00:33:e000::         uA (PSP/USD)      [Gi0/0/0/1, Link-Local]:0         isis-1              InUse  Y 
+fcbb:bb00:33:e000::         uA (PSP/USD)      [Gi0/0/0/2, Link-Local]:0:P       isis-1              InUse  Y 
 fcbb:bb00:33:e001::         uA (PSP/USD)      [Gi0/0/0/2, Link-Local]:0         isis-1              InUse  Y 
 fcbb:bb00:33:e002::         uA (PSP/USD)      [Gi0/0/0/1, Link-Local]:0:P       isis-1              InUse  Y 
-fcbb:bb00:33:e003::         uA (PSP/USD)      [Gi0/0/0/2, Link-Local]:0:P       isis-1              InUse  Y
+fcbb:bb00:33:e003::         uA (PSP/USD)      [Gi0/0/0/1, Link-Local]:0         isis-1              InUse  Y 
+fcbb:bb00:33:e004::         uDT2U             200:0                             l2vpn_srv6          InUse  Y 
+fcbb:bb00:33:e005::         uDT2M             200:0                             l2vpn_srv6          InUse  Y

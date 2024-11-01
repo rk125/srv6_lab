@@ -1,8 +1,8 @@
 Building configuration...
 
-Current configuration : 10948 bytes
+Current configuration : 11183 bytes
 !
-! Last configuration change at 11:35:05 UTC Fri Oct 25 2024
+! Last configuration change at 18:13:02 UTC Thu Oct 31 2024 by dnac
 !
 version 17.10
 service timestamps debug datetime msec
@@ -253,14 +253,23 @@ policy-map system-cpp-policy
 !
 !
 !
+interface Port-channel1
+ switchport mode trunk
+!
 interface GigabitEthernet0/0
  vrf forwarding Mgmt-vrf
  ip address 192.168.125.84 255.255.255.0
  negotiation auto
 !
 interface GigabitEthernet1/0/1
+ description pe1 g0
+ switchport mode trunk
+ channel-group 1 mode on
 !
 interface GigabitEthernet1/0/2
+ description pe2 g0
+ switchport mode trunk
+ channel-group 1 mode on
 !
 interface GigabitEthernet1/0/3
 !
@@ -273,6 +282,8 @@ interface GigabitEthernet1/0/6
 interface GigabitEthernet1/0/7
 !
 interface GigabitEthernet1/0/8
+ description r1 g2
+ switchport mode trunk
 !
 interface Vlan1
  no ip address

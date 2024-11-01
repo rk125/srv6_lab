@@ -1,8 +1,8 @@
 Building configuration...
 
-Current configuration : 11051 bytes
+Current configuration : 11179 bytes
 !
-! Last configuration change at 17:35:44 UTC Thu Oct 24 2024 by dnac
+! Last configuration change at 17:45:52 UTC Thu Oct 31 2024 by dnac
 !
 version 17.10
 service timestamps debug datetime msec
@@ -260,8 +260,12 @@ interface GigabitEthernet0/0
  negotiation auto
 !
 interface GigabitEthernet1/0/1
+ description pe2 g0
+ switchport mode trunk
 !
 interface GigabitEthernet1/0/2
+ description pe2 g1
+ switchport mode trunk
 !
 interface GigabitEthernet1/0/3
 !
@@ -274,6 +278,8 @@ interface GigabitEthernet1/0/6
 interface GigabitEthernet1/0/7
 !
 interface GigabitEthernet1/0/8
+ description r2 g2
+ switchport mode trunk
 !
 interface Vlan1
  no ip address

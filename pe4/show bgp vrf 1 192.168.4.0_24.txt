@@ -1,11 +1,11 @@
-Fri Oct 25 12:23:57.406 UTC
+Thu Oct 31 18:21:11.867 UTC
 BGP routing table entry for 192.168.4.0/24, Route Distinguisher: 4.4.4.4:0
 Versions:
   Process           bRIB/RIB   SendTblVer
   Speaker                  3            3
     SRv6-VPN SID: fcbb:bb00:44:e004::/64
     Format: f3216
-Last Modified: Oct 25 12:01:54.197 for 00:22:03
+Last Modified: Oct 25 12:01:54.197 for 6d06h
 Paths: (1 available, best #1)
   Advertised to PE peers (in unique update groups):
     fcbb:bb00:11::1                         
