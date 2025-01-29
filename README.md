@@ -1,7 +1,8 @@
 # Scripts to get command outputs from network devices
 
-Using pyATS
-Get outputs from commands in lists per device type, store them in separate directory for each device. 
+Using pyATS for interaction to devices.
+Get outputs from multiple commands per device type, store them in separate directory for each device. 
+Commands to run defined in python code in lists per device type.
 
 **Install and check pyATS**
 
@@ -14,6 +15,7 @@ Activate pyenv:
 ```
 source pyATSv/bin/activate
 ```
+See if prompt changes to venv name.
 
 Install pyats:
 ```
