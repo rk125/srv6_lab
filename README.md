@@ -1,4 +1,4 @@
-** Install and check pyATS **
+**Install and check pyATS**
 
 Install pyenv:
 ```
@@ -20,7 +20,7 @@ Check if works:
 pyats version check
 ```
 
-** Run commands **
+**Run commands**
 ```
 python3 getRunning.py
 ```
