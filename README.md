@@ -6,16 +6,16 @@ Commands to run defined in python code in lists per device type.
 
 **Install and check pyATS**
 
-Install pyenv in _pyATSv_ directory:
+Install python virtual environment in _pyATSv_ directory:
 ```
 python3 -m venv pyATSv
 ```
 
-Activate pyenv:
+Activate virtual environment:
 ```
 source pyATSv/bin/activate
 ```
-See if prompt changes to venv name.
+See if prompt changes to virtual environment name.
 
 Install pyats:
 ```
@@ -41,7 +41,7 @@ deactivate
 ```
 source pyATSv/bin/activate
 ```
-(see if promt changes to venv name)
+(see if promt changes to virtual environment name)
 ```
 python3 getRunning.py
 ```
